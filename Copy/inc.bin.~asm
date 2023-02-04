@@ -1,0 +1,8 @@
+next: inc bl
+mov al,bl
+out 0100b, al
+dec cl
+mov al, cl
+out 1000b, al
+jmp next
+
